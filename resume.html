@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Resume — Logan L. Douglass</title>
+  <meta name="description" content="Resume of Logan L. Douglass."/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="icon" type="image/svg+xml" href="assets/img/placeholder.svg"/>
+</head>
+<body data-page="resume">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Logan Personal Website</a>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span>☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+        </ul>
+        <div class="nav-social">
+          <a class="icon" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="icon" href="https://github.com/lldouglass" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sub-hero hero--llm"><div class="hero-overlay"><div class="container"><h1 class="sub-hero-title">Resume</h1></div></div></section>
+
+  <div class="tabs-card">
+    <div class="container">
+      <nav class="tabs-nav" aria-label="Section tabs">
+        <a class="tab" href="index.html">Home</a>
+        <a class="tab" href="education.html">Education</a>
+        <a class="tab" href="experience.html">Experience</a>
+        <a class="tab" href="projects.html">Projects</a>
+        <a class="tab active" href="resume.html">Resume</a>
+        <a class="tab" href="contact.html">Contact me</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="content" class="section">
+    <div class="container">
+      <div class="resume-actions"><button class="btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+      <section class="resume-block">
+        <h2 class="resume-name">Logan L. Douglass</h2>
+        <p><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a> · 720‑391‑4835 · <a href="https://lldouglass.github.io/">lldouglass.github.io</a></p>
+      </section>
+
+      <section class="resume-block">
+        <h3>Education</h3>
+        <div class="resume-item">
+          <div class="resume-item-head"><strong>Colorado School of Mines</strong><span>Golden, CO</span><span>Aug 2021 — Dec 2025</span></div>
+          <ul>
+            <li>M.S. in Data Science, Specialty in Large Language Models, GPA: 4.0 <em>(Expected: Dec 2025)</em></li>
+            <li>B.S. in Computer Science</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-block" id="paper">
+        <h3>Publications</h3>
+        <ul>
+          <li>
+            Douglass, L. L., <em>et al.</em> “Risk Analysis of Flowlines in the Oil and Gas Sector: A GIS and Machine Learning Approach,” Colorado School of Mines (2025).
+            <!-- Replace the # with your actual URL or upload a PDF to /papers/... -->
+            <a class="btn btn-small" href="#" target="_blank" rel="noopener">Read paper</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="resume-block">
+        <h3>Experience</h3>
+        <div class="resume-item">
+          <div class="resume-item-head"><strong>Data Scientist 1 | Data Science Intern</strong><span>Exabeam — Denver, CO</span><span>Jul 2025 — Present | Apr 2025 — Jul 2025</span></div>
+          <ul>
+            <li>Built &amp; shipped call‑ingest Gemini (Vertex AI) metric extraction → AI summaries of sales calls and synced to Salesforce.</li>
+            <li>Trained ICP &amp; lead‑scoring models (XGBoost/Random Forest) on call features; signals now inform org‑wide revenue planning.</li>
+            <li>Owned GCP stack (BigQuery, Vertex AI, Cloud Run): ETL/feature pipelines, auto‑retrain, and drift/error monitoring.</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <div class="resume-item-head"><strong>Graduate | Undergraduate Researcher</strong><span>Colorado School of Mines — Dept. of Applied Mathematics &amp; Statistics</span><span>Aug 2024 — Present</span></div>
+          <ul>
+            <li>Co‑authored publication above.</li>
+            <li>Applied GIS + ML to predict petroleum flowline failure risk; built ensembles with PCA.</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <div class="resume-item-head"><strong>Data Analyst Intern</strong><span>Cyber Risk Alliance — New York, NY</span><span>May 2023 — Aug 2023</span></div>
+          <ul>
+            <li>Supported Snowflake ETL; built Python extraction/transform scripts for Naviga → Salesforce migration.</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <div class="resume-item-head"><strong>Caddie</strong><span>Castle Pines Golf Club — Castle Pines, CO</span><span>May 2018 — Aug 2022</span></div>
+        </div>
+      </section>
+
+      <section class="resume-block">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <div><h4>Programming</h4><p>Python, SQL, R, C++, Git, NumPy, Pandas, Matplotlib, Scikit‑learn, TensorFlow, PyTorch, LaTeX</p></div>
+          <div><h4>Data Platforms</h4><p>Salesforce, Naviga, Monday.com, Snowflake, GCP (BigQuery, Vertex AI/Gemini, Cloud Run)</p></div>
+        </div>
+      </section>
+
+      <section class="resume-block">
+        <h3>Relevant Projects</h3>
+        <ul>
+          <li><strong>GPT‑2.0 from Scratch (2025):</strong> Implemented full GPT‑2‑style model from scratch; custom attention &amp; training runs.</li>
+          <li><strong>LLM Interpretability (2025):</strong> Chain‑of‑Thought analysis via TransformerLens; layer patching &amp; activation probes.</li>
+          <li><strong>Machine Learning &amp; Dementia (2024):</strong> CNN/Xception for Alzheimer’s severity from MRI; loss‑landscape studies.</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Logan L. Douglass</p></div></footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

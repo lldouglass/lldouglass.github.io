@@ -9,7 +9,11 @@
     });
   }
 
-  // Highlight active nav if not set
+  // Footer year
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+
+  // Highlight active nav links
   const page = document.body.getAttribute('data-page');
   if (page && nav) {
     nav.querySelectorAll('a').forEach(a => {
@@ -19,10 +23,12 @@
       }
     });
   }
-
-  // Footer year
-  const y = document.getElementById('year');
-  if (y) y.textContent = new Date().getFullYear();
+  // Highlight active tab in tabs-card too
+  document.querySelectorAll('.tabs-nav .tab').forEach(tab => {
+    const href = tab.getAttribute('href') || '';
+    if (page && href.includes(`${page}.html`)) tab.classList.add('active');
+    if (page === 'home' && href.endsWith('index.html')) tab.classList.add('active');
+  });
 
   // Contact form -> mailto:
   const form = document.getElementById('contact-form');

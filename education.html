@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Education — Logan L. Douglass</title>
-  <meta name="description" content="Education — Colorado School of Mines (M.S. Data Science; B.S. Computer Science)." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" href="assets/img/placeholder.svg" />
+  <meta name="description" content="Colorado School of Mines — M.S. Data Science (LLMs), B.S. Computer Science."/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="icon" type="image/svg+xml" href="assets/img/placeholder.svg"/>
 </head>
 <body data-page="education">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#content">Skip to content</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
@@ -21,7 +21,6 @@
           <li><a class="active" href="education.html">Education</a></li>
           <li><a href="experience.html">Experience</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="certifications.html">Certifications</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact me</a></li>
         </ul>
@@ -33,23 +32,67 @@
     </div>
   </header>
 
-  <main id="main" class="section">
+  <!-- Sub-hero -->
+  <section class="sub-hero hero--llm">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1 class="sub-hero-title">Education</h1>
+      </div>
+    </div>
+  </section>
+
+  <div class="tabs-card">
     <div class="container">
-      <figure class="cover-figure"><img src="assets/img/placeholder.svg" alt="Colorado School of Mines campus" /></figure>
+      <nav class="tabs-nav" aria-label="Section tabs">
+        <a class="tab" href="index.html">Home</a>
+        <a class="tab active" href="education.html">Education</a>
+        <a class="tab" href="experience.html">Experience</a>
+        <a class="tab" href="projects.html">Projects</a>
+        <a class="tab" href="resume.html">Resume</a>
+        <a class="tab" href="contact.html">Contact me</a>
+      </nav>
+    </div>
+  </div>
 
-      <p class="eyebrow">Aug 2021 — Dec 2025</p>
-      <h1>Colorado School of Mines — Golden, CO</h1>
+  <main id="content" class="section">
+    <div class="container">
 
-      <article class="card">
-        <h2>M.S. in Data Science <span class="muted">— Specialty in Large Language Models</span></h2>
-        <ul>
-          <li>GPA: 4.0 <span class="muted">(Expected: Dec 2025)</span></li>
-        </ul>
+      <!-- Entry 1 -->
+      <article class="entry">
+        <figure class="entry-media">
+          <!-- Wikimedia Commons direct file path (OK to hotlink) -->
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mines-GuggenheimHall.jpg"
+               alt="Guggenheim Hall at Colorado School of Mines"/>
+        </figure>
+        <div class="entry-body">
+          <header class="entry-head">
+            <div class="eyebrow">Aug 2021 — Dec 2025 · Golden, CO</div>
+            <h2 class="entry-title">Colorado School of Mines</h2>
+          </header>
+          <div class="entry-content">
+            <p><strong>M.S. in Data Science</strong> — Specialty in Large Language Models, <em>GPA: 4.0</em> (Expected Dec 2025)</p>
+            <p><strong>B.S. in Computer Science</strong></p>
+          </div>
+        </div>
       </article>
 
-      <article class="card">
-        <h2>B.S. in Computer Science</h2>
+      <!-- Entry 2 (additional campus photo, caption) -->
+      <article class="entry">
+        <figure class="entry-media">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Colorado%20School%20of%20Mines%20(5893297266).jpg"
+               alt="Colorado School of Mines campus view"/>
+        </figure>
+        <div class="entry-body">
+          <header class="entry-head">
+            <div class="eyebrow">Campus</div>
+            <h3 class="entry-title">Scenes from Mines</h3>
+          </header>
+          <div class="entry-content">
+            <p>Golden, Colorado — at the foothills of the Rockies.</p>
+          </div>
+        </div>
       </article>
+
     </div>
   </main>
 

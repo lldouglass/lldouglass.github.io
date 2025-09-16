@@ -6,10 +6,10 @@
   <title>Contact — Logan L. Douglass</title>
   <meta name="description" content="Contact Logan L. Douglass."/>
   <link rel="stylesheet" href="assets/css/styles.css"/>
-  <link rel="icon" href="assets/img/placeholder.svg"/>
+  <link rel="icon" type="image/svg+xml" href="assets/img/placeholder.svg"/>
 </head>
 <body data-page="contact">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#content">Skip to content</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
@@ -21,7 +21,6 @@
           <li><a href="education.html">Education</a></li>
           <li><a href="experience.html">Experience</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="certifications.html">Certifications</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a class="active" href="contact.html">Contact me</a></li>
         </ul>
@@ -33,58 +32,41 @@
     </div>
   </header>
 
-  <main id="main" class="section">
+  <section class="sub-hero hero--llm"><div class="hero-overlay"><div class="container"><h1 class="sub-hero-title">Contact</h1></div></div></section>
+
+  <div class="tabs-card">
     <div class="container">
-      <h1>Give feedback</h1>
-      <form id="contact-form" class="contact-form">
-        <label>
-          <span>Name</span>
-          <input type="text" name="name" autocomplete="name" required />
-        </label>
-        <label>
-          <span>Email</span>
-          <input type="email" name="email" autocomplete="email" required />
-        </label>
-        <label>
-          <span>Message</span>
-          <textarea name="message" rows="6" required></textarea>
-        </label>
+      <nav class="tabs-nav" aria-label="Section tabs">
+        <a class="tab" href="index.html">Home</a>
+        <a class="tab" href="education.html">Education</a>
+        <a class="tab" href="experience.html">Experience</a>
+        <a class="tab" href="projects.html">Projects</a>
+        <a class="tab" href="resume.html">Resume</a>
+        <a class="tab active" href="contact.html">Contact me</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="content" class="section">
+    <div class="container">
+      <form id="contact-form" class="contact-form card roomy">
+        <h2 class="mt0">Give feedback</h2>
+        <label><span>Name</span><input type="text" name="name" autocomplete="name" required/></label>
+        <label><span>Email</span><input type="email" name="email" autocomplete="email" required/></label>
+        <label><span>Message</span><textarea name="message" rows="6" required></textarea></label>
         <button type="submit" class="btn">Send</button>
       </form>
 
       <div class="contact-grid">
-        <section>
-          <h2>Location</h2>
-          <p>Highlands Ranch, CO</p>
-        </section>
-
-        <section>
-          <h2>Phone</h2>
-          <p><a href="tel:+17203914835">(+1) 720‑391‑4835</a></p>
-        </section>
-
-        <section>
-          <h2>Email</h2>
-          <p><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></p>
-        </section>
-
-        <section>
-          <h2>Social</h2>
-          <p>
-            <a href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">LinkedIn</a> ·
-            <a href="https://github.com/lldouglass" target="_blank" rel="noopener">GitHub</a>
-          </p>
-        </section>
+        <section class="card"><h3>Location</h3><p>Highlands Ranch, CO</p></section>
+        <section class="card"><h3>Phone</h3><p><a href="tel:+17203914835">(+1) 720‑391‑4835</a></p></section>
+        <section class="card"><h3>Email</h3><p><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></p></section>
+        <section class="card"><h3>Social</h3><p><a href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/lldouglass" target="_blank" rel="noopener">GitHub</a></p></section>
       </div>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Logan L. Douglass</p>
-    </div>
-  </footer>
-
+  <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Logan L. Douglass</p></div></footer>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

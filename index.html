@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Logan L. Douglass — Personal Website</title>
-  <meta name="description" content="Logan L. Douglass — Data Scientist (LLMs, GCP, MLOps). Portfolio, experience, projects, and resume." />
-  <link rel="preload" href="assets/css/styles.css" as="style" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" href="assets/img/placeholder.svg" />
-  <meta property="og:title" content="Logan L. Douglass — Personal Website" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="Data Scientist — LLMs • GCP • MLOps" />
-  <meta property="og:url" content="https://lldouglass.github.io/" />
+  <meta name="description" content="Logan L. Douglass — Data Scientist (LLMs, GCP, MLOps). Portfolio, experience, projects, and resume."/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="icon" type="image/svg+xml" href="assets/img/placeholder.svg"/>
 </head>
 <body data-page="home">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#content">Skip to content</a>
 
+  <!-- Sticky top header (simple) -->
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html">Logan Personal Website</a>
-
       <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        ☰
+        <span class="sr-only">Toggle navigation</span>☰
       </button>
-
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <ul>
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="experience.html">Experience</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="certifications.html">Certifications</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact me</a></li>
         </ul>
@@ -43,52 +35,59 @@
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1 class="hero-title">Logan L. Douglass</h1>
-          <p class="hero-subtitle">Personal Website</p>
-          <p class="hero-tag">Data Scientist — LLMs • GCP • MLOps</p>
-          <div class="hero-cta">
-            <a class="btn" href="#general">Continue</a>
-            <a class="btn btn-outline" href="projects.html">View Projects</a>
-          </div>
-          <div class="hero-links">
-            <a class="chip" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="chip" href="mailto:logan42.ld@gmail.com">Gmail</a>
-            <a class="chip" href="https://github.com/lldouglass" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
-        <figure class="hero-figure" aria-label="Portrait">
-          <!-- Use your photo by replacing the src, keep alt text -->
-          <img src="assets/img/placeholder.svg" alt="Portrait of Logan L. Douglass" />
-        </figure>
-      </div>
-    </section>
+  <!-- HERO with LLM background + scroll button -->
+  <section class="hero hero--llm">
+    <div class="hero-overlay">
+      <div class="container hero-center">
+        <h1 class="hero-title big">LOGAN L. DOUGLASS</h1>
+        <p class="hero-subtitle big">PERSONAL WEBSITE</p>
+        <p class="hero-tag">Data Scientist — LLMs • GCP • MLOps</p>
 
-    <section class="section" id="welcome">
-      <div class="container">
-        <h2>Welcome video</h2>
-        <div class="media-placeholder" role="img" aria-label="Welcome video placeholder">
-          <div>Video placeholder — drop in an .mp4 or YouTube embed later</div>
-        </div>
+        <a href="#tabs" class="scroll-down" aria-label="Scroll to navigation below">
+          <span class="scroll-dot" aria-hidden="true"></span>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="general">
-      <div class="container">
-        <h2>General information</h2>
-        <div class="info-grid">
-          <div class="info-item"><strong>Name</strong> <span>Logan L. Douglass</span></div>
-          <div class="info-item"><strong>Currently</strong> <span>Data Scientist 1 at Exabeam; Graduate Researcher at Colorado School of Mines</span></div>
-          <div class="info-item"><strong>Preparing</strong> <span>M.S. in Data Science (LLMs) — expected Dec 2025</span></div>
-          <div class="info-item"><strong>Email</strong> <a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></div>
-          <div class="info-item"><strong>Website</strong> <a href="https://lldouglass.github.io/">lldouglass.github.io</a></div>
-          <div class="info-item"><strong>Last update</strong> <time datetime="2025-09-16">September 16, 2025</time></div>
+  <!-- TABS CARD (mirrors example’s white nav bar under hero) -->
+  <div id="tabs" class="tabs-card">
+    <div class="container">
+      <nav class="tabs-nav" aria-label="Section tabs">
+        <a class="tab active" href="index.html">Home</a>
+        <a class="tab" href="education.html">Education</a>
+        <a class="tab" href="experience.html">Experience</a>
+        <a class="tab" href="projects.html">Projects</a>
+        <a class="tab" href="resume.html">Resume</a>
+        <a class="tab" href="contact.html">Contact me</a>
+        <span class="tab-icons">
+          <a class="icon" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a class="icon" href="https://github.com/lldouglass" target="_blank" rel="noopener" aria-label="GitHub"></a>
+        </span>
+      </nav>
+    </div>
+  </div>
+
+  <main id="content" class="section">
+    <div class="container">
+      <article class="card roomy">
+        <header class="eyebrow">General information</header>
+        <div class="grid two">
+          <div>
+            <h2 class="mt0">About</h2>
+            <p>I’m a Data Scientist focusing on Large Language Models and production ML on Google Cloud. I’ve shipped call‑ingest summarization with Vertex AI, built ICP & lead‑scoring models (XGBoost/Random Forest), and own pipelines across BigQuery, Vertex AI, and Cloud Run.</p>
+          </div>
+          <div class="info-grid">
+            <div class="info-item"><strong>Name</strong><span>Logan L. Douglass</span></div>
+            <div class="info-item"><strong>Role</strong><span>Data Scientist 1, Exabeam</span></div>
+            <div class="info-item"><strong>Research</strong><span>Graduate Researcher — Colorado School of Mines</span></div>
+            <div class="info-item"><strong>Email</strong><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></div>
+            <div class="info-item"><strong>Website</strong><a href="https://lldouglass.github.io/">lldouglass.github.io</a></div>
+            <div class="info-item"><strong>Updated</strong><time datetime="2025-09-16">September 16, 2025</time></div>
+          </div>
         </div>
-      </div>
-    </section>
+      </article>
+    </div>
   </main>
 
   <footer class="site-footer">

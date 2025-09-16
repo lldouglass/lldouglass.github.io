@@ -6,10 +6,10 @@
   <title>Experience — Logan L. Douglass</title>
   <meta name="description" content="Professional experience of Logan L. Douglass."/>
   <link rel="stylesheet" href="assets/css/styles.css"/>
-  <link rel="icon" href="assets/img/placeholder.svg"/>
+  <link rel="icon" type="image/svg+xml" href="assets/img/placeholder.svg"/>
 </head>
 <body data-page="experience">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#content">Skip to content</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
@@ -21,7 +21,6 @@
           <li><a href="education.html">Education</a></li>
           <li><a class="active" href="experience.html">Experience</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="certifications.html">Certifications</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact me</a></li>
         </ul>
@@ -33,49 +32,118 @@
     </div>
   </header>
 
-  <main id="main" class="section">
+  <section class="sub-hero hero--llm">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1 class="sub-hero-title">Experience</h1>
+      </div>
+    </div>
+  </section>
+
+  <div class="tabs-card">
     <div class="container">
-      <article class="job">
-        <div class="job-header">
-          <h1><a href="#" aria-label="Exabeam">Exabeam</a> <span class="muted">— Denver, CO</span></h1>
-          <div class="job-meta">Data Scientist 1 | Data Science Intern · <span>Jul 2025 — Present | Apr 2025 — Jul 2025</span></div>
+      <nav class="tabs-nav" aria-label="Section tabs">
+        <a class="tab" href="index.html">Home</a>
+        <a class="tab" href="education.html">Education</a>
+        <a class="tab active" href="experience.html">Experience</a>
+        <a class="tab" href="projects.html">Projects</a>
+        <a class="tab" href="resume.html">Resume</a>
+        <a class="tab" href="contact.html">Contact me</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="content" class="section">
+    <div class="container">
+
+      <!-- Exabeam -->
+      <article class="entry">
+        <figure class="entry-media">
+          <img src="assets/img/placeholder.svg" alt="Exabeam (placeholder image)"/>
+        </figure>
+        <div class="entry-body">
+          <header class="entry-head">
+            <div class="eyebrow">Jul 2025 — Present · Apr 2025 — Jul 2025 · Denver, CO</div>
+            <h2 class="entry-title">Exabeam</h2>
+            <div class="role">DATA SCIENTIST 1 · DATA SCIENCE INTERN</div>
+          </header>
+          <div class="entry-content">
+            <ul>
+              <li>Built &amp; shipped call‑ingest <strong>Vertex AI Gemini</strong> metric extraction → AI summaries of sales calls and synced to Salesforce.</li>
+              <li>Trained <strong>ICP &amp; lead‑scoring</strong> models (XGBoost/Random Forest) on call features; signals now inform org‑wide revenue planning.</li>
+              <li>Owned <strong>GCP stack</strong> (BigQuery, Vertex AI, Cloud Run): ETL/feature pipelines, auto‑retrain, and drift/error monitoring in production.</li>
+            </ul>
+            <div class="entry-cta">
+              <a class="btn btn-outline" href="projects.html#exabeam">CLICK TO SEE PROJECT DETAILS</a>
+            </div>
+          </div>
         </div>
-        <ul class="job-bullets">
-          <li>Built & shipped call‑ingest Gemini (Vertex AI) metric extraction → AI summaries of sales calls and synced to Salesforce.</li>
-          <li>Trained ICP & lead‑scoring models (XGBoost/Random Forest) on call features; signals now inform org‑wide revenue planning.</li>
-          <li>Owned GCP stack (BigQuery, Vertex AI, Cloud Run): ETL/feature pipelines, auto‑retrain, and drift/error monitoring in production.</li>
-        </ul>
       </article>
 
-      <article class="job">
-        <div class="job-header">
-          <h2>Graduate | Undergraduate Researcher <span class="muted">— Colorado School of Mines (Dept. of Applied Mathematics & Statistics)</span></h2>
-          <div class="job-meta">Aug 2024 — Present</div>
+      <hr class="divider"/>
+
+      <!-- Research -->
+      <article class="entry">
+        <figure class="entry-media">
+          <img src="assets/img/placeholder.svg" alt="Colorado School of Mines research (placeholder)"/>
+        </figure>
+        <div class="entry-body">
+          <header class="entry-head">
+            <div class="eyebrow">Aug 2024 — Present · Golden, CO</div>
+            <h2 class="entry-title">Colorado School of Mines — Dept. of Applied Mathematics &amp; Statistics</h2>
+            <div class="role">GRADUATE · UNDERGRADUATE RESEARCHER</div>
+          </header>
+          <div class="entry-content">
+            <ul>
+              <li>Co‑authored: “<em>Risk Analysis of Flowlines in the Oil and Gas Sector: A GIS and Machine Learning Approach</em>” (2025).</li>
+              <li>Applied GIS and ML (Logistic Regression, SVM, Gradient Boosting, PCA) to predict petroleum flowline failure risk.</li>
+              <li>Developed ensemble classifiers with dimensionality reduction to identify high‑risk zones and improve safety insights.</li>
+            </ul>
+            <div class="entry-cta">
+              <a class="btn btn-outline" href="resume.html#paper">CLICK TO SEE PAPER LINK</a>
+            </div>
+          </div>
         </div>
-        <ul class="job-bullets">
-          <li>Co-authored: “Risk Analysis of Flowlines in the Oil and Gas Sector: A GIS and Machine Learning Approach” (2025).</li>
-          <li>Applied GIS and ML (Logistic Regression, SVM, Gradient Boosting, PCA) to predict petroleum flowline failure risk.</li>
-          <li>Developed ensemble classifiers with dimensionality reduction to identify high-risk zones and improve safety insights.</li>
-        </ul>
       </article>
 
-      <article class="job">
-        <div class="job-header">
-          <h2>Data Analyst Intern <span class="muted">— Cyber Risk Alliance, New York, NY</span></h2>
-          <div class="job-meta">May 2023 — Aug 2023</div>
+      <hr class="divider"/>
+
+      <!-- Cyber Risk Alliance -->
+      <article class="entry">
+        <figure class="entry-media">
+          <img src="assets/img/placeholder.svg" alt="Cyber Risk Alliance (placeholder)"/>
+        </figure>
+        <div class="entry-body">
+          <header class="entry-head">
+            <div class="eyebrow">May 2023 — Aug 2023 · New York, NY</div>
+            <h2 class="entry-title">Cyber Risk Alliance</h2>
+            <div class="role">DATA ANALYST INTERN</div>
+          </header>
+          <div class="entry-content">
+            <ul>
+              <li>Supported Python/ETL projects using <strong>Snowflake</strong> to streamline data workflows.</li>
+              <li>Built Python scripts for extraction &amp; transformation, supporting migration from Naviga to Salesforce.</li>
+            </ul>
+          </div>
         </div>
-        <ul class="job-bullets">
-          <li>Supported Python/ETL projects using Snowflake to streamline data workflows.</li>
-          <li>Wrote Python scripts for data extraction and transformation, supporting migration from Naviga to Salesforce.</li>
-        </ul>
       </article>
 
-      <article class="job">
-        <div class="job-header">
-          <h2>Caddie <span class="muted">— Castle Pines Golf Club, Castle Pines, CO</span></h2>
-          <div class="job-meta">May 2018 — Aug 2022</div>
+      <hr class="divider"/>
+
+      <!-- Caddie -->
+      <article class="entry">
+        <figure class="entry-media">
+          <img src="assets/img/placeholder.svg" alt="Castle Pines Golf Club (placeholder)"/>
+        </figure>
+        <div class="entry-body">
+          <header class="entry-head">
+            <div class="eyebrow">May 2018 — Aug 2022 · Castle Pines, CO</div>
+            <h2 class="entry-title">Castle Pines Golf Club</h2>
+            <div class="role">CADDIE</div>
+          </header>
         </div>
       </article>
+
     </div>
   </main>
 
