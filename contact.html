@@ -6,16 +6,13 @@
   <title>Contact — Logan L. Douglass</title>
   <meta name="description" content="Contact Logan L. Douglass."/>
   <link rel="stylesheet" href="assets/css/styles.css"/>
-  <link rel="icon" type="image/svg+xml" href="assets/img/hero-llm.svg"/>
 </head>
 <body data-page="contact">
-  <a class="skip-link" href="#content">Skip to content</a>
-
+  <!-- Header -->
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html">Logan Personal Website</a>
-      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span>☰</button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <nav class="site-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="education.html">Education</a></li>
@@ -24,20 +21,20 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a class="active" href="contact.html">Contact me</a></li>
         </ul>
-        <div class="nav-social">
-          <a class="icon" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <img class="logo" src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="" />
-          </a>
-          <a class="icon" href="https://github.com/lldouglass" target="_blank" rel="noopener" aria-label="GitHub">
-            <img class="logo" src="https://cdn.simpleicons.org/github/000000" alt="" />
-          </a>
-        </div>
       </nav>
     </div>
   </header>
 
-  <section class="sub-hero hero--llm"><div class="hero-overlay"><div class="container"><h1 class="sub-hero-title">Contact</h1></div></div></section>
+  <!-- Hero -->
+  <section class="hero hero--llm">
+    <div class="hero-overlay">
+      <div class="container hero-center">
+        <h1 class="hero-title big">Contact</h1>
+      </div>
+    </div>
+  </section>
 
+  <!-- Tabs under hero (keeps the old navigation feel) -->
   <div class="tabs-card">
     <div class="container">
       <nav class="tabs-nav" aria-label="Section tabs">
@@ -51,26 +48,55 @@
     </div>
   </div>
 
-  <main id="content" class="section">
+  <!-- Main -->
+  <main class="section">
     <div class="container">
-      <form id="contact-form" class="contact-form card roomy">
+      <!-- Mailto form (classic/old behavior, opens default email client) -->
+      <form class="card roomy" action="mailto:logan42.ld@gmail.com" method="GET" enctype="text/plain">
         <h2 class="mt0">Give feedback</h2>
-        <label><span>Name</span><input type="text" name="name" autocomplete="name" required/></label>
-        <label><span>Email</span><input type="email" name="email" autocomplete="email" required/></label>
-        <label><span>Message</span><textarea name="message" rows="6" required></textarea></label>
+
+        <label style="display:block; margin:.75rem 0;">
+          <span style="display:block; font-weight:600; margin-bottom:.25rem;">Name</span>
+          <input type="text" name="name" required
+                 style="width:100%; padding:.6rem .7rem; border:1px solid #e5e7eb; border-radius:.5rem; font:inherit;">
+        </label>
+
+        <label style="display:block; margin:.75rem 0;">
+          <span style="display:block; font-weight:600; margin-bottom:.25rem;">Email</span>
+          <input type="email" name="email" required
+                 style="width:100%; padding:.6rem .7rem; border:1px solid #e5e7eb; border-radius:.5rem; font:inherit;">
+        </label>
+
+        <label style="display:block; margin:.75rem 0;">
+          <span style="display:block; font-weight:600; margin-bottom:.25rem;">Message</span>
+          <textarea name="message" rows="6" required
+                    style="width:100%; padding:.6rem .7rem; border:1px solid #e5e7eb; border-radius:.5rem; font:inherit;"></textarea>
+        </label>
+
         <button type="submit" class="btn">Send</button>
       </form>
 
-      <div class="contact-grid">
-        <section class="card"><h3>Location</h3><p>Highlands Ranch, CO</p></section>
-        <section class="card"><h3>Phone</h3><p><a href="tel:+17203914835">(+1) 720‑391‑4835</a></p></section>
-        <section class="card"><h3>Email</h3><p><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></p></section>
-        <section class="card"><h3>Social</h3><p><a href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/lldouglass" target="_blank" rel="noopener">GitHub</a></p></section>
+      <!-- Contact info cards (same as older versions) -->
+      <div class="card roomy" style="margin-top:1rem;">
+        <div class="info-grid">
+          <div class="info-item"><strong>Location</strong><span>Highlands Ranch, CO</span></div>
+          <div class="info-item"><strong>Phone</strong><span><a href="tel:+17203914835">(+1) 720-391-4835</a></span></div>
+          <div class="info-item"><strong>Email</strong><span><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></span></div>
+          <div class="info-item"><strong>LinkedIn</strong><span><a href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">linkedin.com/in/logan-douglass-6443b6186</a></span></div>
+          <div class="info-item"><strong>GitHub</strong><span><a href="https://github.com/lldouglass" target="_blank" rel="noopener">github.com/lldouglass</a></span></div>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Logan L. Douglass</p></div></footer>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Logan L. Douglass</p>
+    </div>
+  </footer>
+
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
+
