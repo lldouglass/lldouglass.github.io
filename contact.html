@@ -34,7 +34,7 @@
     </div>
   </section>
 
-  <!-- Tabs under hero (keeps the old navigation feel) -->
+  <!-- Tabs under hero -->
   <div class="tabs-card">
     <div class="container">
       <nav class="tabs-nav" aria-label="Section tabs">
@@ -51,41 +51,46 @@
   <!-- Main -->
   <main class="section">
     <div class="container">
-      <!-- Mailto form (classic/old behavior, opens default email client) -->
-      <form class="card roomy" action="mailto:logan42.ld@gmail.com" method="GET" enctype="text/plain">
-        <h2 class="mt0">Give feedback</h2>
 
-        <label style="display:block; margin:.75rem 0;">
-          <span style="display:block; font-weight:600; margin-bottom:.25rem;">Name</span>
-          <input type="text" name="name" required
-                 style="width:100%; padding:.6rem .7rem; border:1px solid #e5e7eb; border-radius:.5rem; font:inherit;">
-        </label>
+      <div class="grid two">
+        <!-- LEFT: Form -->
+        <form class="card roomy"
+              action="mailto:logan42.ld@gmail.com"
+              method="GET" enctype="text/plain">
+          <h2 class="mt0" style="margin-bottom:.5rem;">Send a message</h2>
 
-        <label style="display:block; margin:.75rem 0;">
-          <span style="display:block; font-weight:600; margin-bottom:.25rem;">Email</span>
-          <input type="email" name="email" required
-                 style="width:100%; padding:.6rem .7rem; border:1px solid #e5e7eb; border-radius:.5rem; font:inherit;">
-        </label>
+          <label class="label" for="name">Name</label>
+          <input class="input" id="name" name="name" type="text" required>
 
-        <label style="display:block; margin:.75rem 0;">
-          <span style="display:block; font-weight:600; margin-bottom:.25rem;">Message</span>
-          <textarea name="message" rows="6" required
-                    style="width:100%; padding:.6rem .7rem; border:1px solid #e5e7eb; border-radius:.5rem; font:inherit;"></textarea>
-        </label>
+          <label class="label" for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" required>
 
-        <button type="submit" class="btn">Send</button>
-      </form>
+          <label class="label" for="message">Message</label>
+          <textarea class="textarea" id="message" name="message" rows="6" required></textarea>
 
-      <!-- Contact info cards (same as older versions) -->
-      <div class="card roomy" style="margin-top:1rem;">
-        <div class="info-grid">
-          <div class="info-item"><strong>Location</strong><span>Highlands Ranch, CO</span></div>
-          <div class="info-item"><strong>Phone</strong><span><a href="tel:+17203914835">(+1) 720-391-4835</a></span></div>
-          <div class="info-item"><strong>Email</strong><span><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></span></div>
-          <div class="info-item"><strong>LinkedIn</strong><span><a href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">linkedin.com/in/logan-douglass-6443b6186</a></span></div>
-          <div class="info-item"><strong>GitHub</strong><span><a href="https://github.com/lldouglass" target="_blank" rel="noopener">github.com/lldouglass</a></span></div>
-        </div>
+          <div style="margin-top:.75rem;">
+            <button type="submit" class="btn">Send</button>
+            <a class="btn-outline btn-small" href="mailto:logan42.ld@gmail.com?subject=Website%20contact">Open email app</a>
+          </div>
+        </form>
+
+        <!-- RIGHT: Quick contact info -->
+        <aside class="card roomy">
+          <h2 class="mt0">Contact details</h2>
+          <div class="info-grid">
+            <div class="info-item"><strong>Location</strong><span>Highlands Ranch, CO</span></div>
+            <div class="info-item"><strong>Phone</strong><span><a href="tel:+17203914835">(+1) 720-391-4835</a></span></div>
+            <div class="info-item"><strong>Email</strong><span><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></span></div>
+            <div class="info-item"><strong>LinkedIn</strong>
+              <span><a href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">linkedin.com/in/logan-douglass-6443b6186</a></span>
+            </div>
+            <div class="info-item"><strong>GitHub</strong>
+              <span><a href="https://github.com/lldouglass" target="_blank" rel="noopener">github.com/lldouglass</a></span>
+            </div>
+          </div>
+        </aside>
       </div>
+
     </div>
   </main>
 
@@ -99,4 +104,3 @@
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
-

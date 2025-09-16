@@ -112,3 +112,31 @@ body[data-page="experience"] .entry{ grid-template-columns: 96px 1fr; gap:1rem; 
   .entry{ grid-template-columns:1fr; }
   .tabs-card{ margin-top:-34px; }
 }
+/* ---------- Shared buttons & simple grid (site-wide consistency) ---------- */
+.btn{
+  display:inline-block; padding:.6rem 1rem; border-radius:.5rem;
+  background:#2563eb; color:#fff; border:1px solid #2563eb;
+  font-weight:700; text-decoration:none; cursor:pointer;
+}
+.btn:hover{ filter:brightness(0.95); text-decoration:none; }
+.btn:focus-visible{ outline:3px solid rgba(37,99,235,.35); outline-offset:3px; }
+
+.btn-outline{
+  display:inline-block; padding:.55rem 1rem; border-radius:.5rem;
+  background:#fff; color:#2563eb; border:1px solid #2563eb; font-weight:700;
+  text-decoration:none; cursor:pointer;
+}
+.btn-outline:hover{ background:#f8fafc; text-decoration:none; }
+
+.btn-small{ padding:.35rem .7rem; font-size:.925rem; }
+
+/* Simple responsive grid used on Resume/Contact */
+.grid{ display:grid; gap:1rem; }
+.grid.two{ grid-template-columns: 1.2fr .8fr; }
+@media (max-width: 900px){ .grid.two{ grid-template-columns: 1fr; } }
+
+/* Inputs (Contact form) */
+.input, .textarea{
+  width:100%; padding:.65rem .75rem; border:1px solid #e5e7eb; border-radius:.5rem; font:inherit;
+}
+.label{ display:block; font-weight:600; margin:.25rem 0 .35rem; }
