@@ -2,211 +2,303 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Logan L. Douglass — Data Scientist (LLMs, GCP, MLOps)</title>
+  <title>Logan L. Douglass — Data Scientist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Resume of Logan L. Douglass — Data Scientist focused on LLMs, GCP, and MLOps. Experience at Exabeam, Colorado School of Mines research, and Cyber Risk Alliance.">
+  <meta name="description" content="Logan L. Douglass — Data Scientist focused on LLMs, GCP, and MLOps. Experience at Exabeam, Colorado School of Mines, and Cyber Risk Alliance.">
   <link rel="canonical" href="https://lldouglass.github.io/">
   <link rel="stylesheet" href="styles.css">
-  <meta property="og:title" content="Logan L. Douglass — Data Scientist (LLMs, GCP, MLOps)">
-  <meta property="og:description" content="Resume of Logan L. Douglass — LLMs, GCP, MLOps. Experience at Exabeam, research at Colorado School of Mines, and Cyber Risk Alliance.">
+  <meta name="theme-color" content="#101827">
+  <meta property="og:title" content="Logan L. Douglass — Data Scientist">
+  <meta property="og:description" content="LLMs • GCP • MLOps. Experience at Exabeam, research at Colorado School of Mines, and Cyber Risk Alliance.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lldouglass.github.io/">
-  <meta name="theme-color" content="#0b72e7">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>LD</text></svg>">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Logan L. Douglass",
-    "jobTitle": "Data Scientist",
-    "email": "mailto:logan42.ld@gmail.com",
-    "telephone": "+1-720-391-4835",
-    "url": "https://lldouglass.github.io/",
-    "sameAs": [
-      "https://github.com/lldouglass"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Highlands Ranch",
-      "addressRegion": "CO",
-      "addressCountry": "US"
-    }
-  }
-  </script>
 </head>
+
 <body>
+  <!-- Accessible skip link -->
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <div class="identity">
-        <h1 class="name">Logan L. Douglass</h1>
-        <p class="tagline">Data Scientist — LLMs • GCP • MLOps</p>
-        <ul class="contact">
-          <li><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></li>
-          <li><a href="tel:+17203914835">720‑391‑4835</a></li>
-          <li><a href="https://lldouglass.github.io/" rel="noopener">lldouglass.github.io</a></li>
-          <li><a href="https://github.com/lldouglass" target="_blank" rel="noopener noreferrer">github.com/lldouglass</a></li>
-        </ul>
-      </div>
-      <nav class="top-nav" aria-label="Section navigation">
-        <a href="#experience">Experience</a>
+  <!-- ===== NAVBAR (sticky) ===== -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Home">Logan Douglass</a>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="#home">Home</a>
         <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <button class="btn primary" onclick="window.print()" aria-label="Download or print PDF">Download PDF</button>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
       </nav>
+
+      <!-- Social icons (right side on desktop) -->
+      <div class="social">
+        <a class="icon-btn" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="icon"><use href="#icon-linkedin"></use></svg>
+        </a>
+        <a class="icon-btn" href="mailto:logan42.ld@gmail.com" aria-label="Email">
+          <svg class="icon"><use href="#icon-mail"></use></svg>
+        </a>
+        <a class="icon-btn" href="https://github.com/lldouglass" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg class="icon"><use href="#icon-github"></use></svg>
+        </a>
+      </div>
+
+      <!-- Mobile menu toggle -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <main id="main" class="container" role="main">
+  <main id="main">
+    <!-- ===== HERO / HOME ===== -->
+    <section id="home" class="section hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Logan L. Douglass</h1>
+          <p class="subtitle">Data Scientist — LLMs • GCP • MLOps</p>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <h2>Experience</h2>
+          <div class="hero-actions">
+            <a class="btn primary" href="#experience">Continue</a>
+            <a class="btn ghost" href="#projects">View Projects</a>
+          </div>
 
-      <article class="item">
-        <div class="item-head">
-          <h3>Data Scientist 1 &nbsp;<span class="divider">|</span>&nbsp; Data Science Intern</h3>
-          <div class="meta">
-            <span>Exabeam — Denver, CO</span>
-            <span>Jul 2025 – Present &nbsp; | &nbsp; Apr 2025 – Jul 2025</span>
+          <div class="hero-social">
+            <a class="chip" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="icon"><use href="#icon-linkedin"></use></svg> LinkedIn
+            </a>
+            <a class="chip" href="mailto:logan42.ld@gmail.com" aria-label="Email">
+              <svg class="icon"><use href="#icon-mail"></use></svg> Gmail
+            </a>
+            <a class="chip" href="https://github.com/lldouglass" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="icon"><use href="#icon-github"></use></svg> GitHub
+            </a>
           </div>
         </div>
-        <ul class="bullets">
-          <li>Built and shipped call‑ingest → Gemini (Vertex AI) metric extraction with AI summaries of sales calls; synchronized insights to Salesforce.</li>
-          <li>Trained ICP &amp; lead‑scoring models (XGBoost, Random Forest) on call features; signals now inform org‑wide revenue planning.</li>
-          <li>Owned GCP stack (BigQuery, Vertex AI, Cloud Run): ETL/feature pipelines, automated retraining, and drift/error monitoring in production.</li>
-        </ul>
-      </article>
 
-      <article class="item">
-        <div class="item-head">
-          <h3>Graduate / Undergraduate Researcher</h3>
-          <div class="meta">
-            <span>Colorado School of Mines — Dept. of Applied Mathematics &amp; Statistics</span>
-            <span>Aug 2024 – Present</span>
-          </div>
+        <div class="hero-media">
+          <!-- Optional portrait (file already in your repo as Me.jpg). Safe to remove if you prefer a text-only hero. -->
+          <img class="avatar" src="Me.jpg" alt="Portrait of Logan L. Douglass" loading="lazy">
         </div>
-        <ul class="bullets">
-          <li>Co‑authored publication: <em>“Risk Analysis of Flowlines in the Oil and Gas Sector: A GIS and Machine Learning Approach”</em> (2025).</li>
-          <li>Applied GIS + ML (Logistic Regression, SVM, Gradient Boosting, PCA) to predict petroleum flowline failure risk.</li>
-          <li>Developed ensemble classifiers with dimensionality reduction to identify high‑risk zones and improve environmental safety insights.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <h3>Data Analyst Intern</h3>
-          <div class="meta">
-            <span>Cyber Risk Alliance — New York, NY</span>
-            <span>May 2023 – Aug 2023</span>
-          </div>
-        </div>
-        <ul class="bullets">
-          <li>Assisted lead data engineer with Python and ETL projects using Snowflake to streamline data workflows.</li>
-          <li>Wrote Python scripts for data extraction and transformation, supporting migration from Naviga to Salesforce.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <h3>Caddie</h3>
-          <div class="meta">
-            <span>Castle Pines Golf Club — Castle Pines, CO</span>
-            <span>May 2018 – Aug 2022</span>
-          </div>
-        </div>
-      </article>
+      </div>
     </section>
 
-    <!-- EDUCATION -->
+    <!-- ===== EDUCATION ===== -->
     <section id="education" class="section">
-      <h2>Education</h2>
-
-      <article class="item">
-        <div class="item-head">
-          <h3>Colorado School of Mines — Golden, CO</h3>
-          <div class="meta">
-            <span>Aug 2021 – Dec 2025</span>
+      <div class="container">
+        <h2>Education</h2>
+        <div class="card">
+          <div class="card-head">
+            <h3>Colorado School of Mines — Golden, CO</h3>
+            <span class="meta">Aug 2021 — Dec 2025</span>
           </div>
+          <ul class="bullets">
+            <li>M.S. in Data Science, Specialty in Large Language Models, GPA: 4.0 <em>(Expected: Dec 2025)</em></li>
+            <li>B.S. in Computer Science</li>
+          </ul>
         </div>
-        <ul class="bullets">
-          <li>M.S. in Data Science (Specialty: Large Language Models), GPA: 4.0 — <em>Expected Dec 2025</em></li>
-          <li>B.S. in Computer Science — <em>May 2025</em></li>
-        </ul>
-      </article>
+      </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+          <article class="t-item">
+            <header class="t-head">
+              <h3>Data Scientist 1&nbsp;<span class="divider">|</span>&nbsp;Data Science Intern</h3>
+              <span class="meta">Exabeam — Denver, CO • Jul 2025 — Present | Apr 2025 — Jul 2025</span>
+            </header>
+            <ul class="bullets">
+              <li>Built &amp; shipped call‑ingest Gemini (Vertex AI) metric extraction → AI summaries of sales calls and synced to Salesforce.</li>
+              <li>Trained ICP &amp; lead‑scoring models (XGBoost/Random Forrest) on call features; signals now inform org‑wide revenue planning.</li>
+              <li>Owned GCP stack (BigQuery, Vertex AI, Cloud Run): ETL/feature pipelines, auto‑retrain, and drift/error monitoring in production.</li>
+            </ul>
+          </article>
+
+          <article class="t-item">
+            <header class="t-head">
+              <h3>Graduate | Undergraduate Researcher</h3>
+              <span class="meta">Colorado School of Mines — Dept. of Applied Mathematics and Statistics • Aug 2024 — Present</span>
+            </header>
+            <ul class="bullets">
+              <li>Co-authored publication: <em>“Risk Analysis of Flowlines in the Oil and Gas Sector: A GIS and Machine Learning Approach”</em> (2025).</li>
+              <li>Applied GIS and ML (Logistic Regression, SVM, Gradient Boosting, PCA) to predict petroleum flowline failure risk.</li>
+              <li>Developed ensemble classifiers with dimensionality reduction to identify high-risk zones, improving environmental safety insights.</li>
+            </ul>
+          </article>
+
+          <article class="t-item">
+            <header class="t-head">
+              <h3>Data Analyst Intern</h3>
+              <span class="meta">Cyber Risk Alliance — New York, NY • May 2023 — Aug 2023</span>
+            </header>
+            <ul class="bullets">
+              <li>Assisted lead data engineer with Python and ETL projects using Snowflake to streamline data workflows.</li>
+              <li>Wrote Python scripts for data extraction and transformation, supporting migration from Naviga to Salesforce.</li>
+            </ul>
+          </article>
+
+          <article class="t-item">
+            <header class="t-head">
+              <h3>Caddie</h3>
+              <span class="meta">Castle Pines Golf Club — Castle Pines, CO • May 2018 — Aug 2022</span>
+            </header>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
     <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-col">
-          <h4>Programming</h4>
-          <p>Python, SQL, R, C++, Git, NumPy, Pandas, Matplotlib, Scikit‑learn, TensorFlow, PyTorch, LaTeX</p>
-        </div>
-        <div class="skill-col">
-          <h4>Data Platforms</h4>
-          <p>Salesforce, Naviga, Monday.com, Snowflake, Google Cloud Platform (BigQuery, Vertex AI/Gemini, Cloud Run)</p>
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="pill-grid">
+          <div class="pill-card">
+            <h4>Programming</h4>
+            <p>Python, SQL, R, C++, Git, NumPy, Pandas, Matplotlib, Scikit‑learn, TensorFlow, PyTorch, LaTeX</p>
+          </div>
+          <div class="pill-card">
+            <h4>Data Platforms</h4>
+            <p>Salesforce, Naviga, Monday.com, Snowflake, GoogleCloudPlatform (BigQuery, Gemini / Vertex AI, Cloud Run)</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="card-grid">
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
 
-        <article class="card">
-          <header class="card-header">
-            <h3>GPT‑2.0 from Scratch (2025)</h3>
-          </header>
-          <p>Designed and implemented a full GPT‑2.0 language model from the ground up in Python, including custom attention and the Transformer architecture. Trained and tested on multiple NLP tasks.</p>
-          <ul class="tags">
-            <li>Python</li><li>PyTorch</li><li>Transformers</li>
-          </ul>
-          <div class="card-actions">
-            <a class="btn ghost" href="https://github.com/lldouglass/TransformerTesting" target="_blank" rel="noopener noreferrer">View Code</a>
-          </div>
-        </article>
+        <div class="grid">
+          <article class="card project">
+            <header class="card-head">
+              <h3>GPT‑2.0 from Scratch (2025)</h3>
+            </header>
+            <p>Designed and implemented a full GPT‑2.0 language model from the ground up in Python, including custom-built attention mechanisms and the transformer architecture. Trained and tested the model on a variety of NLP tasks.</p>
+            <ul class="tags"><li>Python</li><li>PyTorch</li><li>Transformers</li></ul>
+            <div class="card-actions">
+              <a class="btn ghost" href="https://github.com/lldouglass/TransformerTesting" target="_blank" rel="noopener">
+                <svg class="icon"><use href="#icon-github"></use></svg> View Code
+              </a>
+            </div>
+          </article>
 
-        <article class="card">
-          <header class="card-header">
-            <h3>LLM Interpretability — Chain‑of‑Thought (2025)</h3>
-          </header>
-          <p>Used TransformerLens and layer patching to analyze chain‑of‑thought prompts. Probed model activations with PyTorch &amp; Hugging Face to assess faithfulness of CoT outputs.</p>
-          <ul class="tags">
-            <li>PyTorch</li><li>Hugging Face</li><li>TransformerLens</li>
-          </ul>
-          <div class="card-actions">
-            <a class="btn ghost" href="https://github.com/lldouglass/Chain-of-thought-reasoning-for-LLMs" target="_blank" rel="noopener noreferrer">View Code</a>
-          </div>
-        </article>
+          <article class="card project">
+            <header class="card-head">
+              <h3>LLM Interpretability — Chain‑of‑Thought (2025)</h3>
+            </header>
+            <p>Explored the internal reasoning of LLMs using TransformerLens and layer patching to analyze chain-of-thought prompts. Used PyTorch and Hugging Face Transformers to probe model activations and assess CoT faithfulness.</p>
+            <ul class="tags"><li>PyTorch</li><li>Hugging Face</li><li>TransformerLens</li></ul>
+            <div class="card-actions">
+              <a class="btn ghost" href="https://github.com/lldouglass/Chain-of-thought-reasoning-for-LLMs" target="_blank" rel="noopener">
+                <svg class="icon"><use href="#icon-github"></use></svg> View Code
+              </a>
+            </div>
+          </article>
 
-        <article class="card">
-          <header class="card-header">
-            <h3>Machine Learning &amp; Dementia (2024)</h3>
-          </header>
-          <p>Developed and optimized deep learning models (custom CNN, Xception) to classify Alzheimer’s Disease severity from MRI images. Explored loss landscapes and hidden categories to address overfitting and clinic‑like data challenges.</p>
-          <ul class="tags">
-            <li>Python</li><li>TensorFlow</li><li>CNN</li>
-          </ul>
-          <div class="card-actions">
-            <a class="btn ghost" href="https://github.com/lldouglass/MachineLearning-and-Dementia" target="_blank" rel="noopener noreferrer">View Code</a>
-          </div>
-        </article>
-
+          <article class="card project">
+            <header class="card-head">
+              <h3>Machine Learning &amp; Dementia (2024)</h3>
+            </header>
+            <p>Developed and optimized deep learning approaches (custom CNN, Xception) to classify Alzheimer’s Disease severity from MRI images. Explored loss landscapes and hidden categories to mitigate overfitting and handle clinic‑like data.</p>
+            <ul class="tags"><li>Python</li><li>TensorFlow</li><li>CNN</li></ul>
+            <div class="card-actions">
+              <a class="btn ghost" href="https://github.com/lldouglass/MachineLearning-and-Dementia" target="_blank" rel="noopener">
+                <svg class="icon"><use href="#icon-github"></use></svg> View Code
+              </a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
+    <!-- ===== RESUME ===== -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2>Resume</h2>
+        <div class="card">
+          <p>View the latest résumé content on this page or save a PDF directly.</p>
+          <div class="card-actions">
+            <button class="btn primary" onclick="window.print()">Print / Save as PDF</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:logan42.ld@gmail.com">
+            <div class="icon-wrap"><svg class="icon xl"><use href="#icon-mail"></use></svg></div>
+            <div>
+              <h4>Email</h4>
+              <p>logan42.ld@gmail.com</p>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">
+            <div class="icon-wrap"><svg class="icon xl"><use href="#icon-linkedin"></use></svg></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>/in/logan-douglass-6443b6186</p>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://github.com/lldouglass" target="_blank" rel="noopener">
+            <div class="icon-wrap"><svg class="icon xl"><use href="#icon-github"></use></svg></div>
+            <div>
+              <h4>GitHub</h4>
+              <p>github.com/lldouglass</p>
+            </div>
+          </a>
+        </div>
+
+        <p class="muted small">No phone number is listed by request.</p>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <footer class="site-footer">
     <div class="container footer-inner">
       <p><strong>Logan L. Douglass</strong> — Data Scientist</p>
-      <p class="muted">Last updated: September 16, 2025 • <a href="#" onclick="window.print();return false;">Print to PDF</a></p>
+      <p class="muted small">Last updated: September 16, 2025</p>
     </div>
   </footer>
+
+  <!-- Minimal script: mobile menu toggle -->
+  <script>
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('site-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('open', !open);
+      });
+    }());
+  </script>
+
+  <!-- Inline SVG sprite for icons (no external deps) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.43c.58.11.8-.25.8-.56 0-.27-.01-.98-.02-1.92-3.26.71-3.95-1.57-3.95-1.57-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.26 3.4.96.11-.76.4-1.26.73-1.55-2.6-.3-5.34-1.3-5.34-5.78 0-1.28.46-2.33 1.2-3.15-.12-.3-.52-1.52.12-3.16 0 0 .99-.32 3.25 1.2.94-.26 1.95-.39 2.95-.39s2.01.13 2.95.39c2.26-1.52 3.24-1.2 3.24-1.2.64 1.64.24 2.86.12 3.16.75.82 1.2 1.87 1.2 3.15 0 4.49-2.75 5.47-5.37 5.77.41.35.78 1.04.78 2.1 0 1.52-.01 2.75-.01 3.13 0 .31.21.68.81.56A11.5 11.5 0 0 0 12 .5Z"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+      <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23.5h-4V8zm7.5 0h3.8v2.1h.05C12.6 8.7 14.6 8 16.9 8c4.1 0 4.85 2.7 4.85 6.1V23.5h-4V15.3c0-1.95-.03-4.45-2.71-4.45-2.72 0-3.14 2.12-3.14 4.3v8.35H8V8z"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <path d="M2 4h20a2 2 0 0 1 2 2v.35l-12 7.5-12-7.5V6a2 2 0 0 1 2-2Zm0 5.65V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9.65l-10 6.25L2 9.65Z"/>
+    </symbol>
+  </svg>
 </body>
 </html>
