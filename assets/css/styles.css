@@ -106,20 +106,26 @@ em,i{ color:var(--muted); }
   width:100%;
   aspect-ratio:4/3;
   border-radius:.5rem;
-  overflow:hidden;
+  overflow:hidden;                /* keeps photos neat, but… */
   border:1px solid var(--border);
   box-shadow:var(--shadow);
   background:#fff;
 }
 .entry-media img{ width:100%; height:100%; object-fit:cover; object-position:center; }
 
-/* Experience — small square logos */
+/* Education: text ABOVE image, image below (no overlap) */
+body[data-page="education"] .entry{ grid-template-columns:1fr; }
+body[data-page="education"] .entry-body{ order:1; }
+body[data-page="education"] .entry-media{ order:2; margin-top:.6rem; overflow:hidden; }
+
+/* Experience — small square logos (fully visible) */
+body[data-page="experience"] .entry{ grid-template-columns: 80px 1fr; gap:1rem; align-items:center; }
 .entry-media.logo{
-  aspect-ratio:1/1;
-  display:grid; place-items:center;
-  background:transparent; border:0; box-shadow:none;
+  width:64px; height:64px;
+  display:flex; align-items:center; justify-content:center;
+  border:0; box-shadow:none; overflow:visible; background:transparent;
 }
-.entry-media.logo img{ width:56px; height:56px; object-fit:contain; }
+.entry-media.logo img{ max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; }
 
 /* Headings */
 .entry-head{ margin-bottom:.45rem; }
@@ -140,15 +146,6 @@ em,i{ color:var(--muted); }
 }
 .project-media img{ width:100%; height:100%; object-fit:cover; }
 .tags{ list-style:none; display:flex; flex-wrap:wrap; gap:.5rem; margin:.25rem 0 0; padding:0; }
-
-/* Page-specific layout overrides */
-/* Education: text ABOVE image */
-body[data-page="education"] .entry{ grid-template-columns:1fr; }
-body[data-page="education"] .entry-body{ order:1; }
-body[data-page="education"] .entry-media{ order:2; margin-top:.6rem; }
-
-/* Experience: skinny logo column */
-body[data-page="experience"] .entry{ grid-template-columns: 110px 1fr; gap:1rem; }
 
 /* Buttons */
 .btn{ display:inline-block; border:1px solid var(--accent); background:var(--accent); color:var(--accent-ink); padding:.55rem .9rem; border-radius:.5rem; font-weight:700; }

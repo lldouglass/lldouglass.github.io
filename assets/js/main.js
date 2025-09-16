@@ -18,9 +18,7 @@
   if (page && nav) {
     nav.querySelectorAll('a').forEach(a => {
       const href = a.getAttribute('href') || '';
-      if (href.includes(`${page}.html`) || (page === 'home' && href.endsWith('index.html'))) {
-        a.classList.add('active');
-      }
+      if (href.includes(`${page}.html`) || (page === 'home' && href.endsWith('index.html'))) a.classList.add('active');
     });
   }
   // Highlight active tab
@@ -30,35 +28,44 @@
     if (page === 'home' && href.endsWith('index.html')) tab.classList.add('active');
   });
 
-  // Robust hero photo loader (guarantees something shows)
+  // Generic multi-source image loader for any <img data-src-list="url1|url2|...">
+  function loadFromList(img, list) {
+    const stamp = `?v=${Date.now()}`; // defeat caches
+    const sources = list.split('|').map(s => s.trim()).filter(Boolean);
+    let i = 0;
+    function tryNext() {
+      if (i >= sources.length) return false;
+      const next = sources[i++];
+      img.onerror = () => tryNext();
+      img.onload  = () => { img.onerror = null; img.onload = null; };
+      img.src = next + stamp;
+      return true;
+    }
+    if (!tryNext()) {
+      // As a last resort, show a neutral placeholder rectangle
+      const svg = encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480"><rect width="100%" height="100%" fill="#e5e7eb"/></svg>');
+      img.src = `data:image/svg+xml;charset=utf-8,${svg}`;
+    }
+  }
+
+  // Load hero avatar robustly
   const avatar = document.querySelector('.hero-avatar');
   if (avatar) {
+    const rawGit = 'https://raw.githubusercontent.com/lldouglass/lldouglass.github.io/main/assets/img/profile.jpg';
     const candidates = [
       'assets/img/profile.jpg',
       'assets/img/profile.jpeg',
       'assets/img/profile.JPG',
-      'assets/img/profile.png'
+      'assets/img/profile.png',
+      rawGit
     ];
-    let i = 0;
-    const stamp = `?v=${Date.now()}`; // bust caches aggressively
-    function fallback() {
-      if (i >= candidates.length) {
-        // Last resort placeholder (monogram)
-        const svg = encodeURIComponent(`
-          <svg xmlns="http://www.w3.org/2000/svg" width="280" height="280">
-            <rect width="100%" height="100%" fill="#0b1020"/>
-            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
-                  font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="84" fill="#ffffff">LD</text>
-          </svg>
-        `);
-        avatar.src = `data:image/svg+xml;charset=utf-8,${svg}`;
-        return;
-      }
-      avatar.src = `${candidates[i++]}${stamp}`;
-    }
-    avatar.addEventListener('error', fallback);
-    fallback();
+    loadFromList(avatar, candidates.join('|'));
   }
+
+  // Initialize all multi-source images
+  document.querySelectorAll('img[data-src-list]').forEach(img => {
+    loadFromList(img, img.getAttribute('data-src-list'));
+  });
 
   // Contact form -> mailto:
   const form = document.getElementById('contact-form');
