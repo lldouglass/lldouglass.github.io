@@ -5,24 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Logan L. Douglass — Personal Website</title>
   <meta name="description" content="Logan L. Douglass — Data Scientist focused on LLMs, GCP and MLOps."/>
-  <link rel="stylesheet" href="assets/css/styles.css"/>
-  <link rel="icon" type="image/svg+xml" href="assets/img/hero-llm.svg"/>
+  <link rel="stylesheet" href="/assets/css/styles.css"/>
+  <link rel="icon" href="/assets/img/hero-llm.svg" type="image/svg+xml"/>
 </head>
 <body data-page="home">
-  <a class="skip-link" href="#content">Skip to content</a>
-
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html">Logan Personal Website</a>
-      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a class="brand" href="/index.html">Logan Personal Website</a>
+      <nav class="site-nav" aria-label="Primary">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact me</a></li>
+          <li><a class="active" href="/index.html">Home</a></li>
+          <li><a href="/education.html">Education</a></li>
+          <li><a href="/experience.html">Experience</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/contact.html">Contact me</a></li>
         </ul>
       </nav>
     </div>
@@ -31,30 +28,33 @@
   <section class="hero hero--llm">
     <div class="hero-overlay">
       <div class="container hero-center">
-        <!-- DIRECT local file: make sure this exists at assets/img/profile.jpg -->
-        <img class="hero-avatar" src="assets/img/profile.jpg" alt="Logan L. Douglass headshot"/>
+        <!-- MUST exist at /assets/img/profile.jpg -->
+        <img class="hero-avatar"
+             src="/assets/img/profile.jpg?v=2"
+             alt="Logan L. Douglass headshot"
+             width="280" height="280"
+             loading="eager" fetchpriority="high" decoding="async">
         <h1 class="hero-title big">LOGAN L. DOUGLASS</h1>
         <p class="hero-subtitle big">PERSONAL WEBSITE</p>
         <p class="hero-tag">Data Scientist - LLMs - GCP - MLOps</p>
-        <a href="#tabs" class="scroll-down" aria-label="Scroll to navigation below"><span class="scroll-dot" aria-hidden="true"></span></a>
       </div>
     </div>
   </section>
 
-  <div id="tabs" class="tabs-card">
+  <div class="tabs-card">
     <div class="container">
       <nav class="tabs-nav" aria-label="Section tabs">
-        <a class="tab active" href="index.html">Home</a>
-        <a class="tab" href="education.html">Education</a>
-        <a class="tab" href="experience.html">Experience</a>
-        <a class="tab" href="projects.html">Projects</a>
-        <a class="tab" href="resume.html">Resume</a>
-        <a class="tab" href="contact.html">Contact me</a>
+        <a class="tab active" href="/index.html">Home</a>
+        <a class="tab" href="/education.html">Education</a>
+        <a class="tab" href="/experience.html">Experience</a>
+        <a class="tab" href="/projects.html">Projects</a>
+        <a class="tab" href="/resume.html">Resume</a>
+        <a class="tab" href="/contact.html">Contact me</a>
       </nav>
     </div>
   </div>
 
-  <main id="content" class="section">
+  <main class="section">
     <div class="container">
       <article class="card roomy">
         <header class="eyebrow">General information</header>
@@ -80,6 +80,6 @@
   </main>
 
   <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Logan L. Douglass</p></div></footer>
-  <script src="assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
