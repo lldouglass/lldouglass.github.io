@@ -4,20 +4,17 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Logan L. Douglass — Personal Website</title>
-  <meta name="description" content="Logan L. Douglass — Data Scientist (LLMs, GCP, MLOps). Portfolio, experience, projects, and resume."/>
+  <meta name="description" content="Logan L. Douglass — Data Scientist interested in Large Language Models (LLMs), GCP and MLOps."/>
   <link rel="stylesheet" href="assets/css/styles.css"/>
-  <link rel="icon" type="image/svg+xml" href="assets/img/placeholder.svg"/>
+  <link rel="icon" type="image/svg+xml" href="assets/img/hero-llm.svg"/>
 </head>
 <body data-page="home">
   <a class="skip-link" href="#content">Skip to content</a>
 
-  <!-- Sticky top header (simple) -->
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html">Logan Personal Website</a>
-      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>☰
-      </button>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span>☰</button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <ul>
           <li><a class="active" href="index.html">Home</a></li>
@@ -28,17 +25,22 @@
           <li><a href="contact.html">Contact me</a></li>
         </ul>
         <div class="nav-social">
-          <a class="icon" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="icon" href="https://github.com/lldouglass" target="_blank" rel="noopener">GitHub</a>
+          <a class="icon" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img class="logo" src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="" />
+          </a>
+          <a class="icon" href="https://github.com/lldouglass" target="_blank" rel="noopener" aria-label="GitHub">
+            <img class="logo" src="https://cdn.simpleicons.org/github/000000" alt="" />
+          </a>
         </div>
       </nav>
     </div>
   </header>
 
-  <!-- HERO with LLM background + scroll button -->
+  <!-- Hero with LLM bg + your photo + scroll button -->
   <section class="hero hero--llm">
     <div class="hero-overlay">
       <div class="container hero-center">
+        <img class="hero-avatar" src="https://github.com/lldouglass.png?size=320" alt="Photo of Logan L. Douglass" loading="eager"/>
         <h1 class="hero-title big">LOGAN L. DOUGLASS</h1>
         <p class="hero-subtitle big">PERSONAL WEBSITE</p>
         <p class="hero-tag">Data Scientist — LLMs • GCP • MLOps</p>
@@ -50,7 +52,7 @@
     </div>
   </section>
 
-  <!-- TABS CARD (mirrors example’s white nav bar under hero) -->
+  <!-- Tabs card under hero -->
   <div id="tabs" class="tabs-card">
     <div class="container">
       <nav class="tabs-nav" aria-label="Section tabs">
@@ -61,8 +63,12 @@
         <a class="tab" href="resume.html">Resume</a>
         <a class="tab" href="contact.html">Contact me</a>
         <span class="tab-icons">
-          <a class="icon" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-          <a class="icon" href="https://github.com/lldouglass" target="_blank" rel="noopener" aria-label="GitHub"></a>
+          <a class="icon" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img class="logo" src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="" />
+          </a>
+          <a class="icon" href="https://github.com/lldouglass" target="_blank" rel="noopener" aria-label="GitHub">
+            <img class="logo" src="https://cdn.simpleicons.org/github/000000" alt="" />
+          </a>
         </span>
       </nav>
     </div>
@@ -75,12 +81,15 @@
         <div class="grid two">
           <div>
             <h2 class="mt0">About</h2>
-            <p>I’m a Data Scientist focusing on Large Language Models and production ML on Google Cloud. I’ve shipped call‑ingest summarization with Vertex AI, built ICP & lead‑scoring models (XGBoost/Random Forest), and own pipelines across BigQuery, Vertex AI, and Cloud Run.</p>
+            <p>
+              I’m a Data Scientist deeply interested in <strong>Large Language Models</strong>. I’m actively learning and building in this space—training small transformers from scratch, exploring
+              <em>interpretability</em> (e.g., logit lens &amp; attention probing), and productionizing LLM features on <strong>GCP</strong> (BigQuery, Vertex AI, Cloud Run). I enjoy turning research‑style ideas into reliable, observable systems.
+            </p>
           </div>
           <div class="info-grid">
             <div class="info-item"><strong>Name</strong><span>Logan L. Douglass</span></div>
             <div class="info-item"><strong>Role</strong><span>Data Scientist 1, Exabeam</span></div>
-            <div class="info-item"><strong>Research</strong><span>Graduate Researcher — Colorado School of Mines</span></div>
+            <div class="info-item"><strong>Focus</strong><span>LLMs · MLOps · Cloud</span></div>
             <div class="info-item"><strong>Email</strong><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></div>
             <div class="info-item"><strong>Website</strong><a href="https://lldouglass.github.io/">lldouglass.github.io</a></div>
             <div class="info-item"><strong>Updated</strong><time datetime="2025-09-16">September 16, 2025</time></div>

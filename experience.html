@@ -6,7 +6,7 @@
   <title>Experience — Logan L. Douglass</title>
   <meta name="description" content="Professional experience of Logan L. Douglass."/>
   <link rel="stylesheet" href="assets/css/styles.css"/>
-  <link rel="icon" type="image/svg+xml" href="assets/img/placeholder.svg"/>
+  <link rel="icon" type="image/svg+xml" href="assets/img/hero-llm.svg"/>
 </head>
 <body data-page="experience">
   <a class="skip-link" href="#content">Skip to content</a>
@@ -25,20 +25,18 @@
           <li><a href="contact.html">Contact me</a></li>
         </ul>
         <div class="nav-social">
-          <a class="icon" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="icon" href="https://github.com/lldouglass" target="_blank" rel="noopener">GitHub</a>
+          <a class="icon" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img class="logo" src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="" />
+          </a>
+          <a class="icon" href="https://github.com/lldouglass" target="_blank" rel="noopener" aria-label="GitHub">
+            <img class="logo" src="https://cdn.simpleicons.org/github/000000" alt="" />
+          </a>
         </div>
       </nav>
     </div>
   </header>
 
-  <section class="sub-hero hero--llm">
-    <div class="hero-overlay">
-      <div class="container">
-        <h1 class="sub-hero-title">Experience</h1>
-      </div>
-    </div>
-  </section>
+  <section class="sub-hero hero--llm"><div class="hero-overlay"><div class="container"><h1 class="sub-hero-title">Experience</h1></div></div></section>
 
   <div class="tabs-card">
     <div class="container">
@@ -56,10 +54,9 @@
   <main id="content" class="section">
     <div class="container">
 
-      <!-- Exabeam -->
       <article class="entry">
         <figure class="entry-media">
-          <img src="assets/img/placeholder.svg" alt="Exabeam (placeholder image)"/>
+          <img src="assets/img/projects/gpt2.svg" alt="Exabeam — AI summarization illustration"/>
         </figure>
         <div class="entry-body">
           <header class="entry-head">
@@ -69,9 +66,9 @@
           </header>
           <div class="entry-content">
             <ul>
-              <li>Built &amp; shipped call‑ingest <strong>Vertex AI Gemini</strong> metric extraction → AI summaries of sales calls and synced to Salesforce.</li>
-              <li>Trained <strong>ICP &amp; lead‑scoring</strong> models (XGBoost/Random Forest) on call features; signals now inform org‑wide revenue planning.</li>
-              <li>Owned <strong>GCP stack</strong> (BigQuery, Vertex AI, Cloud Run): ETL/feature pipelines, auto‑retrain, and drift/error monitoring in production.</li>
+              <li>Built &amp; shipped call‑ingest <strong>Vertex AI Gemini</strong> metric extraction → AI summaries of sales calls synced to Salesforce.</li>
+              <li>Trained <strong>ICP &amp; lead‑scoring</strong> models (XGBoost/Random Forest) on call features; signals inform org‑wide revenue planning.</li>
+              <li>Owned <strong>GCP stack</strong> (BigQuery, Vertex AI, Cloud Run): ETL/feature pipelines, auto‑retrain, and drift/error monitoring.</li>
             </ul>
             <div class="entry-cta">
               <a class="btn btn-outline" href="projects.html#exabeam">CLICK TO SEE PROJECT DETAILS</a>
@@ -82,10 +79,9 @@
 
       <hr class="divider"/>
 
-      <!-- Research -->
       <article class="entry">
         <figure class="entry-media">
-          <img src="assets/img/placeholder.svg" alt="Colorado School of Mines research (placeholder)"/>
+          <img src="assets/img/projects/cot.svg" alt="Research work illustration"/>
         </figure>
         <div class="entry-body">
           <header class="entry-head">
@@ -96,8 +92,8 @@
           <div class="entry-content">
             <ul>
               <li>Co‑authored: “<em>Risk Analysis of Flowlines in the Oil and Gas Sector: A GIS and Machine Learning Approach</em>” (2025).</li>
-              <li>Applied GIS and ML (Logistic Regression, SVM, Gradient Boosting, PCA) to predict petroleum flowline failure risk.</li>
-              <li>Developed ensemble classifiers with dimensionality reduction to identify high‑risk zones and improve safety insights.</li>
+              <li>Applied GIS &amp; ML (Logistic Regression, SVM, Gradient Boosting, PCA) to predict petroleum flowline failure risk.</li>
+              <li>Built ensembles with dimensionality reduction to identify high‑risk zones and improve safety insights.</li>
             </ul>
             <div class="entry-cta">
               <a class="btn btn-outline" href="resume.html#paper">CLICK TO SEE PAPER LINK</a>
@@ -108,10 +104,9 @@
 
       <hr class="divider"/>
 
-      <!-- Cyber Risk Alliance -->
       <article class="entry">
         <figure class="entry-media">
-          <img src="assets/img/placeholder.svg" alt="Cyber Risk Alliance (placeholder)"/>
+          <img src="assets/img/projects/mri.svg" alt="Cyber Risk Alliance illustration"/>
         </figure>
         <div class="entry-body">
           <header class="entry-head">
@@ -121,8 +116,8 @@
           </header>
           <div class="entry-content">
             <ul>
-              <li>Supported Python/ETL projects using <strong>Snowflake</strong> to streamline data workflows.</li>
-              <li>Built Python scripts for extraction &amp; transformation, supporting migration from Naviga to Salesforce.</li>
+              <li>Supported Snowflake ETL projects to streamline data workflows.</li>
+              <li>Built Python extraction/transform scripts for Naviga → Salesforce migration.</li>
             </ul>
           </div>
         </div>
@@ -130,10 +125,9 @@
 
       <hr class="divider"/>
 
-      <!-- Caddie -->
       <article class="entry">
         <figure class="entry-media">
-          <img src="assets/img/placeholder.svg" alt="Castle Pines Golf Club (placeholder)"/>
+          <img src="assets/img/projects/gpt2.svg" alt="Castle Pines Golf Club illustration"/>
         </figure>
         <div class="entry-body">
           <header class="entry-head">
@@ -147,12 +141,7 @@
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Logan L. Douglass</p>
-    </div>
-  </footer>
-
+  <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Logan L. Douglass</p></div></footer>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
