@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — Logan L. Douglass</title>
+  <meta name="description" content="Contact Logan L. Douglass."/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="icon" href="assets/img/placeholder.svg"/>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Logan Personal Website</a>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span>☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a class="active" href="contact.html">Contact me</a></li>
+        </ul>
+        <div class="nav-social">
+          <a class="icon" href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="icon" href="https://github.com/lldouglass" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <h1>Give feedback</h1>
+      <form id="contact-form" class="contact-form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send</button>
+      </form>
+
+      <div class="contact-grid">
+        <section>
+          <h2>Location</h2>
+          <p>Highlands Ranch, CO</p>
+        </section>
+
+        <section>
+          <h2>Phone</h2>
+          <p><a href="tel:+17203914835">(+1) 720‑391‑4835</a></p>
+        </section>
+
+        <section>
+          <h2>Email</h2>
+          <p><a href="mailto:logan42.ld@gmail.com">logan42.ld@gmail.com</a></p>
+        </section>
+
+        <section>
+          <h2>Social</h2>
+          <p>
+            <a href="https://www.linkedin.com/in/logan-douglass-6443b6186" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="https://github.com/lldouglass" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Logan L. Douglass</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
