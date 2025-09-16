@@ -23,6 +23,7 @@
       }
     });
   }
+  // Highlight active tab
   document.querySelectorAll('.tabs-nav .tab').forEach(tab => {
     const href = tab.getAttribute('href') || '';
     if (page && href.includes(`${page}.html`)) tab.classList.add('active');
