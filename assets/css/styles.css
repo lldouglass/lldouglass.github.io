@@ -70,10 +70,10 @@ em,i{ color:var(--muted); }
 
 /* Sub-hero */
 .sub-hero{ min-height:30vh; display:grid; place-items:end; }
-.sub-hero .hero-overlay{ padding:3.85rem 0 3.35rem; color:#fff; } /* extra bottom padding prevents overlap */
+.sub-hero .hero-overlay{ padding:3.85rem 0 3.35rem; color:#fff; }
 .sub-hero-title{ color:#fff; font-size:clamp(1.6rem, 4vw, 2.5rem); font-weight:800; }
 
-/* Tabs card (under hero) */
+/* Tabs card */
 .tabs-card{
   position:relative; z-index:2;
   margin-top:clamp(-48px, -5.5vw, -36px);
@@ -88,20 +88,20 @@ em,i{ color:var(--muted); }
 .tab.active{ background:var(--chip); }
 .tab-icons{ margin-left:auto; display:flex; gap:.5rem; }
 
-/* Content helpers */
+/* Info helpers */
 .eyebrow{ color:var(--muted); font-weight:700; letter-spacing:.06em; text-transform:uppercase; font-size:.85rem; margin-bottom:.4rem; }
 .info-grid{ display:grid; gap:.5rem; }
 .info-item{ display:flex; gap:.5rem; align-items:baseline; }
 .info-item strong{ min-width:8rem; color:var(--muted); }
 
-/* Entry (image left / content right) — NO OVERLAP */
+/* Entry (image & text) */
 .entry{
-  display:grid; grid-template-columns: minmax(260px,300px) 1fr; /* slightly wider image column */
-  gap:1.35rem;            /* a bit more space between image and text */
+  display:grid; grid-template-columns: minmax(260px,300px) 1fr;
+  gap:1.35rem;
   align-items:start;
   margin:1.7rem 0;
 }
-.entry-body{ padding-top:.25rem; } /* nudge text down so it never kisses the image top */
+.entry-body{ padding-top:.25rem; }
 .entry-media{
   width:100%;
   aspect-ratio:4/3;
@@ -113,20 +113,15 @@ em,i{ color:var(--muted); }
 }
 .entry-media img{ width:100%; height:100%; object-fit:cover; object-position:center; }
 
-/* SMALL, CLEAN LOGOS on Experience */
+/* Experience — small square logos */
 .entry-media.logo{
   aspect-ratio:1/1;
   display:grid; place-items:center;
   background:transparent; border:0; box-shadow:none;
 }
-.entry-media.logo img{
-  width:72px; height:72px; object-fit:contain; margin:auto; filter:none;
-}
+.entry-media.logo img{ width:56px; height:56px; object-fit:contain; }
 
-/* Experience page: narrower column for logos */
-body[data-page="experience"] .entry{ grid-template-columns: 110px 1fr; gap:1rem; }
-
-/* Headings etc. */
+/* Headings */
 .entry-head{ margin-bottom:.45rem; }
 .entry-title{ margin:.1rem 0 .25rem; font-size:1.35rem; }
 .role{ font-weight:800; letter-spacing:.05em; color:#111827; font-size:.85rem; }
@@ -134,17 +129,26 @@ body[data-page="experience"] .entry{ grid-template-columns: 110px 1fr; gap:1rem;
 .entry-cta{ margin-top:.75rem; }
 .divider{ height:1px; border:0; background:var(--border); margin:1.35rem 0; }
 
-/* Projects (half width media) */
+/* Projects (half-width media) */
 .project{ padding:1.25rem 0; border-bottom:1px solid var(--border); }
 .project:last-of-type{ border-bottom:0; }
 .project-head{ display:flex; align-items:center; justify-content:space-between; gap:1rem; }
 .project-media{
   margin:.5rem auto 1rem;
   border-radius:.5rem; overflow:hidden; border:1px solid var(--border); box-shadow:var(--shadow);
-  width:clamp(300px,50%,560px); /* ~50% width */
+  width:clamp(300px,50%,560px);
 }
 .project-media img{ width:100%; height:100%; object-fit:cover; }
 .tags{ list-style:none; display:flex; flex-wrap:wrap; gap:.5rem; margin:.25rem 0 0; padding:0; }
+
+/* Page-specific layout overrides */
+/* Education: text ABOVE image */
+body[data-page="education"] .entry{ grid-template-columns:1fr; }
+body[data-page="education"] .entry-body{ order:1; }
+body[data-page="education"] .entry-media{ order:2; margin-top:.6rem; }
+
+/* Experience: skinny logo column */
+body[data-page="experience"] .entry{ grid-template-columns: 110px 1fr; gap:1rem; }
 
 /* Buttons */
 .btn{ display:inline-block; border:1px solid var(--accent); background:var(--accent); color:var(--accent-ink); padding:.55rem .9rem; border-radius:.5rem; font-weight:700; }

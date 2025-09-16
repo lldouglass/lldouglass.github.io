@@ -30,6 +30,36 @@
     if (page === 'home' && href.endsWith('index.html')) tab.classList.add('active');
   });
 
+  // Robust hero photo loader (guarantees something shows)
+  const avatar = document.querySelector('.hero-avatar');
+  if (avatar) {
+    const candidates = [
+      'assets/img/profile.jpg',
+      'assets/img/profile.jpeg',
+      'assets/img/profile.JPG',
+      'assets/img/profile.png'
+    ];
+    let i = 0;
+    const stamp = `?v=${Date.now()}`; // bust caches aggressively
+    function fallback() {
+      if (i >= candidates.length) {
+        // Last resort placeholder (monogram)
+        const svg = encodeURIComponent(`
+          <svg xmlns="http://www.w3.org/2000/svg" width="280" height="280">
+            <rect width="100%" height="100%" fill="#0b1020"/>
+            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+                  font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="84" fill="#ffffff">LD</text>
+          </svg>
+        `);
+        avatar.src = `data:image/svg+xml;charset=utf-8,${svg}`;
+        return;
+      }
+      avatar.src = `${candidates[i++]}${stamp}`;
+    }
+    avatar.addEventListener('error', fallback);
+    fallback();
+  }
+
   // Contact form -> mailto:
   const form = document.getElementById('contact-form');
   if (form) {
